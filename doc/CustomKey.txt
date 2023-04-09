@@ -1,0 +1,55 @@
+めーこといっしょ（仮名）用プラグイン「CustomKey」です。
+
+・目的
+　ショートカットキーをカスタマイズ可能にします。
+
+・インストール
+　めーこといっしょ（仮名）プラグインフォルダ(Plug-in)内にコピーしてください
+
+・ショートカットキーの定義
+　CustomKey.iniにショートカットキーを定義します。
+　[Setting]の後に、キー組み合わせ=メニューIDを順に記述してください。
+　キー組み合わせには、Shift/Control/Ctrl/Alt(orそれら複数を+で繋いだもの)+仮想キーを記述します。
+　仮想キーに指定できるものは、後述の仮想キー一覧を参照してください。
+　メニューIDを調べるには、リソースエディタでVocaloid.exeを開いて
+　MENUリソースに記述してあるものを調べるのがいいと思います。
+　フリーのリソースエディタは、ResEditがお勧めです。
+　分かる人は、spy++などでWM_COMMANDの値を調べるのが一番ですが・・・
+
+　標準状態と同様の設定をしたものがサンプルとして同梱されているので、それを編集するのが楽でいいかと。
+
+　めーこといっしょ拡張されている機能もショートカットで呼び出し可能です。
+　例)Ctrl+F1=23461      Ctrl+F1キーでTextEditで1トラックが開きます
+                        (当然ですが、TextEditが未インストールだと何も起きません)
+
+・注意
+　アクセラレータキー機能を使用していないものには未対応です。
+　他プラグインで拡張されているものとコンフリクトしないように注意してください。
+
+・独り言
+　本来は、GUI作って設定できるべきなんだろうけど、激しく面倒・・・
+　そんなにころころ設定を変えるものじゃないだろうから、これでもいいよね？
+
+・仮想キー一覧
+    BACK/TAB/CLEAR/RETURN/SHIFT/CONTROL/MENU/PAUSE/CAPITAL/KANA/JUNJA/
+    FINAL/KANJI/ESCAPE/CONVERT/NONCONVERT/ACCEPT/MODECHANGE/
+    SPACE/PRIOR/NEXT/END/HOME/LEFT/UP/RIGHT/
+    DOWN/SELECT/PRINT/EXECUTE/SNAPSHOT/INSERT/DELETE/HELP/
+    0〜9/A〜Z/F1〜F24/LWIN/RWIN/APPS/SLEEP/
+    NUMPAD0〜NUMPAD9/MULTIPLY/ADD/SEPARATOR/SUBTRACT/DECIMAL/DIVIDE/
+    NUMLOCK/SCROLL/OEM_NEC_EQUAL/OEM_FJ_JISHO/OEM_FJ_MASSHOU/OEM_FJ_TOUROKU/OEM_FJ_LOYA/OEM_FJ_ROYA/
+    LSHIFT/RSHIFT/LCONTROL/RCONTROL/LMENU/RMENU/
+    BROWSER_BACK/BROWSER_FORWARD/BROWSER_REFRESH/BROWSER_STOP/BROWSER_SEARCH/BROWSER_FAVORITES/BROWSER_HOME/
+    VOLUME_MUTE/VOLUME_DOWN/VOLUME_UP/
+    MEDIA_NEXT_TRACK/MEDIA_PREV_TRACK/MEDIA_STOP/MEDIA_PLAY_PAUSE/
+    LAUNCH_MAIL/LAUNCH_MEDIA_SELECT/LAUNCH_APP1/LAUNCH_APP2/
+    OEM_1〜8/OEM_PLUS/OEM_COMMA/OEM_MINUS/OEM_PERIOD/
+    OEM_AX/OEM_102/ICO_HELP/ICO_00/PROCESSKEY/ICO_CLEAR/PACKET/
+    OEM_RESET/OEM_JUMP/OEM_PA1/OEM_PA2/OEM_PA3/OEM_WSCTRL/OEM_CUSEL/
+    OEM_ATTN/OEM_FINISH/OEM_COPY/OEM_AUTO/OEM_ENLW/OEM_BACKTAB/ATTN/CRSEL/
+    EXSEL/EREOF/PLAY/ZOOM/NONAME/PA1/OEM_CLEAR/
+
+    仮想キー定義VK_〜のVK_を取ったものです。詳細は、http://msdn.microsoft.com/en-us/library/ms645540.aspxを参照
+
+・更新履歴
+  Ver.0.01  ・はちゅねのないしょから移植
